@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:shadowColor="#000"
+    android:shadowDx="0"
+    android:shadowDy="30"
+    android:shadowRadius="50">
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        app:cardCornerRadius="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:elevation="8dp"
+        >
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pokemon_image"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+            <TextView
+                android:id="@+id/txt_pokemon_name"
+                android:text="Bulbasaur"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
